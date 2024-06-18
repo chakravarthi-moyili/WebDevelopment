@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="MyLogo.png">
+    <title>ClimaClock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo"><img src="MyLogo.png" alt=""></div>
+    <h1 class="p-name">ClimaClock</h1>
+    <div id="main">
+        <div id="crv1"></div>
+        <div id="crv2"></div>
+        <div id="digclck"> </div>
+        <div id="dtdig">
+            <h2 id="date">00</h2>
+            <h3>Date</h3>
+            <h2 id="month">00</h2>
+            <h3>Month</h3>
+            <h2 id="year">0000</h2>
+            <h3>Year</h3>
+        </div>
+        <div id="dtdig">
+            <h2>TIME</h2>
+            <h2 id="hour">00</h2>
+            <h2 id="cln">:</h2>
+            <h2 id="min">00</h2>
+            <h2 id="cln">:</h2>
+            <h2 id="sec">00</h2>
+            <span id="spans">
+                <span>
+                    <input type="radio" name="ampm" value="am" id="ampm">
+                    <label for="am" id="ampm">AM</label>
+                </span>
+                <span>
+                    <input type="radio" name="ampm" value="am" id="ampm">
+                    <label for="am" id = "ampm">PM</label>
+                </span>
+            </span>
+        </div>
+        <div id="wday">
+            <input type="radio" id="sun" name="day" value="sunday">
+            <label for="sun">SUN</label>
+            <input type="radio" id="mon" name="day" value="monday">
+            <label for="mon">MON</label>
+            <input type="radio" id="tue" name="day" value="tuesday">
+            <label for="tue">TUE</label>
+            <input type="radio" id="wed" name="day" value="wednesday">
+            <label for="wed">WED</label>
+            <input type="radio" id="thu" name="day" value="thursday">
+            <label for="thu">THU</label>
+            <input type="radio" id="fri" name="day" value="friday">
+            <label for="fri">FRI</label>
+            <input type="radio" id="sat" name="day" value="saturday">
+            <label for="sat">SAT</label>
+        </div>
+        <div>
+            <h2 class="temperature">TEMP. <span class="temp1"></span></h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
